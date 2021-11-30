@@ -8,6 +8,11 @@ Read patterns from an SVG file into XLSX for grading. Also display graded patter
 
 ## Basic Operation
 
+1. Convert a sample pattern in an SVG file to an XLSX file. One sheet will be created per path.
+2. Add grade offsets in additional columns on each sheet. Column name will be the graded pattern. If a sheet is missing a grade, the sample pattern will be used instead.
+3. Inspect the grades.
+4. Save the grades back to a directory of SVG files.
+
 #### Available commands
 ```
 usage: grade.py [-h] {convert_sample,show_grades,save_grades} ...
